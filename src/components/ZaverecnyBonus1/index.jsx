@@ -8,7 +8,7 @@ Zadání: Předstírejme, že na stránce je složitý formulář, do kterého u
 export const ZaverecnyBonus1 = () => {
   return (
     <>
-      Odkaz: <a href="https://www.czechitas.cz/">www.czechitas.cz</a>
+      Odkaz: <a onClick={(e) => !confirm("Opravdu chcete odejít?") ? e.preventDefault() : null } href="https://www.czechitas.cz/">www.czechitas.cz</a>
       <hr />
       Formulář:
       <form>
